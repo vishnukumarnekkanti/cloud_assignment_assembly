@@ -1,0 +1,7 @@
+run p32.asm in 32 bit mode that is
+nasm -f elf p32.asm
+ld -m elf_i386 -s -o p32 p32.o
+./p32
+for p64.s 
+gcc -o p64 p64.s
+./p64
